@@ -309,9 +309,29 @@ gap:16px;
 
 .card{
 
-padding:22px;
+padding:28px;
 
-border-radius:14px;
+border-radius:16px;
+
+background:rgba(255,255,255,0.05);
+
+border:1px solid rgba(255,255,255,0.08);
+
+backdrop-filter:blur(20px);
+
+transition:0.35s;
+
+cursor:pointer;
+
+}
+
+.card:hover{
+
+transform:translateY(-6px);
+
+border:1px solid rgba(255,255,255,0.2);
+
+background:rgba(255,255,255,0.08);
 
 }
 
@@ -349,6 +369,88 @@ display:flex;
 flex-direction:column;
 
 justify-content:center;
+
+}
+  /* HERO SECTION */
+
+.hero{
+
+padding:90px 20px 60px;
+
+text-align:center;
+
+background:radial-gradient(circle at top,
+rgba(255,122,24,0.25),
+transparent 60%);
+
+}
+
+.hero h1{
+
+font-size:42px;
+
+margin-bottom:10px;
+
+}
+
+.hero p{
+
+color:#aaa;
+
+max-width:500px;
+
+margin:auto;
+
+margin-bottom:25px;
+
+font-size:15px;
+
+}
+
+.explore-btn{
+
+background:#ff7a18;
+
+color:white;
+
+padding:12px 22px;
+
+border-radius:10px;
+
+text-decoration:none;
+
+font-size:14px;
+
+transition:0.3s;
+
+}
+
+.explore-btn:hover{
+
+transform:translateY(-2px);
+
+box-shadow:0 10px 30px rgba(255,122,24,0.5);
+
+}
+  @media (max-width:768px){
+
+.hero{
+
+padding:70px 20px 40px;
+
+}
+
+.hero h1{
+
+font-size:32px;
+
+}
+
+.hero p{
+
+font-size:14px;
+
+}
 
 }
 
@@ -392,6 +494,15 @@ justify-content:center;
 
 </div>
 <div class="container">
+  <section class="hero">
+
+<h1>Nex's Vault</h1>
+
+<p>A curated collection of overlays, transitions and creative resources for editors.</p>
+
+<a href="#resources" class="explore-btn">Explore Resources</a>
+
+</section>
 
 <div class="title">Creative Resource Vault</div>
 <div class="subtitle">
